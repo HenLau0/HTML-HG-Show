@@ -1,1 +1,13 @@
 /* Add screen styles below */
+.stage-1-button {
+    background: #bbb;
+    color: #bbb;
+    margin: 10px;
+    padding: 10px;
+    font-size: larger;
+}
+
+button-1 {
+    position: fixed;
+    right: 100px;
+}
