@@ -8,11 +8,14 @@
 }
 
 #button-1 {
-    position: fixed;
-    bottom: 100px;
     color: black ;
 }
 
 #title-1 {
     color: white
+}
+
+.textbox {
+    margin: 10px;
+    padding: 10px;
 }
