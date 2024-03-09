@@ -3,7 +3,10 @@
 const btn = document.querySelector("button");
 
 function housesearch() {
-    alert("testing?")
+    var month = document.getElementById('MonPay').value
+    var down = document.getElementById('DowPay').value
+    if (month > 0 && month < 20000);
+    alert("output1")
   }
 
 btn.addEventListener("click", housesearch);
