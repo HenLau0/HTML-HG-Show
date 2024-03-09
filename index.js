@@ -17,3 +17,19 @@ btn.addEventListener("click", housesearch);
 //        document.getElementById('output').innerHTML = 'No matching result for the search term: ' + searchTerm;
 //   }
 //}
+
+// This is not very elegent, but it does the trick
+// Pass this function the ID of the list, a URL, and title
+function appendListing(listID, url, title) {
+  list = document.getElementById(listID);
+  li = document.createElement("li");
+  a = document.createElement("a");
+  linkText = document.createTextNode(title);
+  a.title = title;
+  a.href = url;
+  a.appendChild(linkText);
+  li.appendChild(a);
+  list.appendChild(li);
+}
+
+appendListing("link-list", "https://sirto.com", "Jeff Siarto");
