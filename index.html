@@ -9,11 +9,13 @@
   </head>
   <body>
     <h1>What house could you afford in today's market?</h1>
-    <label for="name">Please enter your preferred down payment: </br >
-    <input class="textbox" type="text" name="Down-Payment" id="DownPayment" required /></br >
-    <label for="name">Please enter your preferred monthly payment: </br >
-    <input class="textbox" type="text" name="Monthly-Payment" id="MonthlyPayment" required /></br >
-    <button id="button-1" onclick="submit()">Submit</button>
+    <form>
+    Monthly Payment: <input class="inputs" type="text" name="MonPay" >
+    <br>
+    Down Payment: <input class="inputs" type="text" name="DowPay" >
+    <br>
+    <button>Submit</button>
+    </form>
     <script src="index.js"></script>
   </body>
 </html>
