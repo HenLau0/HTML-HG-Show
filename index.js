@@ -24,7 +24,7 @@ function housesearch() {
             appendListing("link-list", url, title)
         }
         if (month > 1200 && month <= 1600){
-            appendListing("link-list", "https://www.youtube.com/watch?v=OzEE0l6ae_8", "test")
+            appendListing("link-list", url, "test")
         }
         if (month > 1600 && month <= 2000){
             appendListing("link-list", url, title)
