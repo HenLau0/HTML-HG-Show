@@ -30,10 +30,10 @@ function housesearch() {
             appendListing("link-list", url, title)
         }
         if (month >= 2000 && month <= 2400){
-            appendListing("link-list", url, title)
+            //appendListing("link-list", url, mail)
         }
         if (month >= 2400 && month <= 2800){
-            appendListing("link-list", url, title)
+            appendListing("link-list", "https://siarto.com", "siarto");
         }
         if (month >= 2800 && month <= 3200){
             appendListing("link-list", url, title)
@@ -169,4 +169,4 @@ btn.addEventListener("click", housesearch);
 
 
 
-//appendListing("link-list", "https://sirto.com", "Jeff Siarto");
+//appendListing("link-list", "https://siarto.com", "Jeff Siarto");
