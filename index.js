@@ -14,7 +14,7 @@ function appendListing(listID, url, title) {
     a.appendChild(linkText);
     li.appendChild(a);
     list.appendChild(li);
-  }
+}
 
 function housesearch() {
     var month = document.getElementById('MonPay').value
@@ -167,24 +167,6 @@ btn.addEventListener("click", housesearch);
 //   }
 //}
 
-<<<<<<< HEAD
 
-  
-//  appendListing("link-list", "https://siarto.com", "Jeff Siarto");
-=======
-// This is not very elegent, but it does the trick
-// Pass this function the ID of the list, a URL, and title
-function appendListing(listID, url, title) {
-  list = document.getElementById(listID);
-  li = document.createElement("li");
-  a = document.createElement("a");
-  linkText = document.createTextNode(title);
-  a.title = title;
-  a.href = url;
-  a.appendChild(linkText);
-  li.appendChild(a);
-  list.appendChild(li);
-}
 
-appendListing("link-list", "https://sirto.com", "Jeff Siarto");
->>>>>>> d8416217a4ebd43c06feaa7c501e9109eb9e7a18
+//appendListing("link-list", "https://sirto.com", "Jeff Siarto");
