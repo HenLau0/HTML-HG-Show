@@ -1,6 +1,3 @@
-// Add JavaScript below
-//document.body.style.backgroundColor = ;
-const btn = document.querySelector("button");
 
 // This is not very elegent, but it does the trick
 // Pass this function the ID of the list, a URL, and title
@@ -19,6 +16,10 @@ function appendListing(listID, url, title) {
 function housesearch() {
     var month = document.getElementById('MonPay').value
     var down = document.getElementById('DowPay').value
+
+    // You may need to define default values here so you don't get undefined variable errors below
+    var url = "http://siarto.com";
+    var title = "test";
     if (down == 10000) {
         if (month >= 800 && month <= 1200){
             appendListing("link-list", url, title)
@@ -36,9 +37,6 @@ function housesearch() {
             appendListing("link-list", "https://siarto.com", "siarto");
         }
         if (month >= 2800 && month <= 3200){
-            appendListing("link-list", url, title)
-        }
-        if (month >= 800 && month <= 1200){
             appendListing("link-list", url, title)
         }
     }
@@ -159,14 +157,15 @@ function housesearch() {
     }
   }
 
-btn.addEventListener("click", housesearch);
-//     if (searchTerm === 'banana') {
-//        document.getElementById('output').innerHTML = 'Search term matched: banana';
-//    } else {
-//        document.getElementById('output').innerHTML = 'No matching result for the search term: ' + searchTerm;
-//   }
-//}
+// This uses a submit action listener to check for a submitted form.
+// It them "prevents the default form from submitting" and allows you to apply JS to the request
+document.getElementById('listing-details').addEventListener("submit", function(e) {
+    // This prevents the default form submission function from happening (HTML default)
+    e.preventDefault();
 
-
+    // Run your function
+    housesearch();
+  }
+);
 
 //appendListing("link-list", "https://siarto.com", "Jeff Siarto");
