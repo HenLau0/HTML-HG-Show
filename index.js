@@ -16,10 +16,147 @@ function appendListing(listID, url, title) {
 function housesearch() {
     var month = document.getElementById('MonPay').value
     var down = document.getElementById('DowPay').value
-
+    //REMOVE BEFORE FURTHER TESTING
+    var down = 10000
     // You may need to define default values here so you don't get undefined variable errors below
     var url = "http://siarto.com";
     var title = "test";
+switch (down) {
+    case 10000 :
+        alert("down works")
+        switch (true) {
+            case (month >= 800 && month <= 1200):
+                alert("sucess")
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1200 && month <= 1600):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1600 && month <= 2000):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2000 && month <= 2400):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2400 && month <= 2800):
+                alert("success")
+                appendListing("link-list", "http://siarto.com", "siarto")
+                break;
+            case (month > 2800 && month <= 3200):
+                appendListing("link-list", url, title)
+                break;
+        }
+    case 20000:
+        switch(true){
+            case (month >= 800 && month <= 1200):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1200 && month <= 1600):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1600 && month <= 2000):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2000 && month <= 2400):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2400 && month <= 2800):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2800 && month <= 3200):
+                appendListing("link-list", url, title)
+                break;
+        }
+    case 30000:
+        switch(true){
+            case (month >= 800 && month <= 1200):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1200 && month <= 1600):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1600 && month <= 2000):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2000 && month <= 2400):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2400 && month <= 2800):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2800 && month <= 3200):
+                appendListing("link-list", url, title)
+                break;
+        }
+    case 40000:
+        switch(true){
+            case (month >= 800 && month <= 1200):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1200 && month <= 1600):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1600 && month <= 2000):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2000 && month <= 2400):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2400 && month <= 2800):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2800 && month <= 3200):
+                appendListing("link-list", url, title)
+                break;
+        }
+    case 50000:
+        switch(true){
+            case (month >= 800 && month <= 1200):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1200 && month <= 1600):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1600 && month <= 2000):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2000 && month <= 2400):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2400 && month <= 2800):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2800 && month <= 3200):
+                appendListing("link-list", url, title)
+                break;
+        }
+    case 60000:
+        switch(true){
+            case (month >= 800 && month <= 1200):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1200 && month <= 1600):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 1600 && month <= 2000):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2000 && month <= 2400):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2400 && month <= 2800):
+                appendListing("link-list", url, title)
+                break;
+            case (month > 2800 && month <= 3200):
+                appendListing("link-list", url, title)
+                break;
+        }
+    default:
+        alert("No houses found")
+}
+}
+//if true{
+    /*
     if (down == 10000) {
         if (month >= 800 && month <= 1200){
             appendListing("link-list", url, title)
@@ -156,7 +293,8 @@ function housesearch() {
         }
     }
   }
-
+*/
+//}
 // This uses a submit action listener to check for a submitted form.
 // It them "prevents the default form from submitting" and allows you to apply JS to the request
 document.getElementById('listing-details').addEventListener("submit", function(e) {
