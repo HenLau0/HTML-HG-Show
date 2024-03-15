@@ -16,8 +16,17 @@
     <div class="container-sm">
       <h1 class="display-1 text-center mt-5">What house could you afford in today's market?</h1>
       <form id="listing-details">
-        <p>Monthly Payment: <input class="inputs" type="text" id="MonPay"></p>
-        <p>Down Payment: <input class="inputs" type="text" id="DowPay"></p>
+        <p>Down Payment:<br />
+          <select class="inputs" id="DowPay">
+            <option value="10000">$10000</option>
+            <option value="20000">$20000</option>
+            <option value="30000">$30000</option>
+            <option value="40000">$40000</option>
+            <option value="50000">$50000</option>
+            <option value="60000">$60000+</option>
+          </select>
+        </p>
+        <p>Monthly Payment:<br />$<input class="inputs" type="text" id="MonPay"></p>
         <p><input type="submit" value="Get Listings" ></p>
       </form>
       <ul id="link-list">
